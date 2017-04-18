@@ -37,19 +37,19 @@
                     <div style="height:350px">
                         <p:scrollPanel style="height:auto; width:auto  ">
                             <div style="height:auto; width:auto"> 
-                                <p:dataTable var="GNombres" value="#{GNombres}">
+<p:dataTable var="car" value="#{dtBasicView.cars}">
     <p:column headerText="Nombre">
-        <h:outputText value="#{f}" />
+        <h:outputText value="#{car.id}" />
                         <h3 style="margin-top:0"/>
     </p:column>
  
     <p:column headerText="Genero">
-        <h:outputText value="#{f}" />
+        <h:outputText value="#{car.year}" />
     </p:column>
  
     <p:column headerText="Popularidad">
         
-        <p:rating value="#{f}" stars="5" cancel="false" onRate="alert('You rated ' + value)" />
+        <p:rating value="#{ratingView.rating2}" stars="5" cancel="false" onRate="alert('You rated ' + value)" />
  
                 </p:column>
  
@@ -63,7 +63,7 @@
                  <div>
                         
                    
- <p:outputLabel value="Nombre al azar "/><p:inputText id="inicial" disabled="true" value="#{f}"/>
+ <p:outputLabel value="Nombre al azar "/><p:inputText id="inicial" disabled="true" value="#{inputNumberView.input2}"/>
                     <p:button value=" Generar" href="#"/>
      </div>
             </ui:define>
