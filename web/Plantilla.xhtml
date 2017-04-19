@@ -22,16 +22,29 @@
     <p:growl id="messages"/>
  
     <p:menubar>
-        <p:submenu label="Inicio" icon="ui-icon-home">          
+        <p:submenu label="Inicio" icon="ui-icon-home">
+            <p:menuitem value="Principal" url=""/>
+            <p:menuitem value="Registro de mascota" url="#" />
+            <p:menuitem value="Generador de nombres" url="http://localhost:28240/HealthyPets/faces/GeneradorN.xhtml"/>
+            <p:menuitem value="Calendario" url=""/>
         </p:submenu>
  
-        <p:submenu label="Mascotas" icon="ui-icon-star">           
+        <p:submenu label="Mascotas" icon="ui-icon-star">
+            <p:menuitem id="mascotas" url="#{d}"/>
         </p:submenu>
  
-        <p:submenu label="Ayuda" icon="ui-icon-help">                        
+        <p:submenu label="Ayuda" icon="ui-icon-help">  
+            <p:menuitem value="Contactanos" url=""/>
+            <p:menuitem value="Guia de usuario" url=""/>
+            <p:menuitem value="Problemas comunes" url=""/>
+            <p:menuitem value="Donativo" url=""/>
         </p:submenu>
  
-        <p:submenu label="Perfil" icon="ui-icon-gear">
+        
+        <p:submenu label="Perfil" icon="ui-icon-gear" >
+            <p:menuitem value="Cuenta" url=""/>
+            <p:menuitem value="Privacidad" url=""/>
+            <p:menuitem value="Cerrar sesión" url=""/>
         </p:submenu>
  
         

@@ -11,15 +11,15 @@
         <ui:composition template="./Plantilla.xhtml">
 
             <ui:define name="left">
-                left
+             
             </ui:define>
 
             <ui:define name="content">
-                 
+                
                 <h:form> 
                    
                     <p:outputLabel value="Inicial "/><p:inputText id="inicial"/>
-                    <p:button value=" Generar" href="#"/>
+                    <p:button value=" Buscar" href=""/>
                     
                      <h:panelGrid columns="2" style="margin-bottom:auto" >   
                          
@@ -63,12 +63,14 @@
                  <div>
                         
                    
- <p:outputLabel value="Nombre al azar "/><p:inputText id="inicial" disabled="true" value="#{inputNumberView.input2}"/>
+ <p:outputLabel value="Nombre al azar "/><p:inputText id="Salida" disabled="true" value="#{inputNumberView.input2}"/>
                     <p:button value=" Generar" href="#"/>
+                    <br/>                        
+                    <label> Version Beta 1.0</label>
      </div>
             </ui:define>
 
         </ui:composition>
-
+            
     </body>
 </html>
